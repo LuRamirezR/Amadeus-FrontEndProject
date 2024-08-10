@@ -1,0 +1,113 @@
+//  Variables
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 600px;
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$breakpoint-laptop}) {
+        @content;
+    }
+}
+
+.titulo-registro {
+    text-align: center;
+    margin-bottom: 25px;
+    p {
+        margin: 0;
+        font-size: 24px;
+    }
+}
+
+// Formulario en sí mismo
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    // Contenedor de cada campo del formulario
+    .datos-formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        
+        // Estilos específicos para tablet
+        @include tablet {
+            justify-content: center;
+        }
+        // Estilos específicos para laptop
+        // @include laptop {
+        //     align-items: flex-start;
+        // }
+        
+        // Icono del formulario
+        .icon-form {
+            width: 24px;
+            height: 24px;
+            color: #0c66e1;
+        }
+
+        // Cada campo de texto del formulario
+        .texto-form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+                font-weight: bold;
+            }
+
+            input, select {
+                width: 100%;
+            }
+        }
+    }
+    // Posiciona el botón dentro del formulario
+    .btn-sgte {
+        align-self: flex-end;  // Posiciona el botón al final y a la derecha
+        margin-top: 20px;      // Ajusta la separación superior
+    }
+}
+
+// Estilos para los input y select
+.input-custom, .select-custom {
+    border: 1px solid #ccc;  // Borde gris claro
+    border-radius: 5px;      // Bordes redondeados
+    padding: 5px;           // Relleno interior
+}
+
+// Estilos del botón
+.btn-primary {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: white;
+    border: 2px solid transparent; 
+
+    // Cuando está deshabilitado
+    &:disabled {
+        background-color: #8ad7ff;
+        cursor: not-allowed;
+    }
+    // Cuando está habilitado
+    &:not(:disabled) {
+        background-color: #0c66e1;
+        cursor: pointer;
+    }
+    // Cuando se hace hover
+    &:not(:disabled):hover {
+        background-color: #0a2f62;
+        cursor: pointer;
+    }
+}

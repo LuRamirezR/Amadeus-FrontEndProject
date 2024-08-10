@@ -1,0 +1,31 @@
+//  Variables
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 600px;
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$breakpoint-laptop}) {
+        @content;
+    }
+}
+
+.encabezado {
+    padding: 20px 0;
+}
+
+.encabezado img {
+    width: 40%;
+    // Estilos específicos para tablet
+    @include tablet {
+        width: 20%;
+    }
+    // Estilos específicos para laptop
+    @include laptop {
+        width: 10%;
+    }
+}

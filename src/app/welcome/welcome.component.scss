@@ -1,0 +1,64 @@
+//  Variables
+$breakpoint-laptop: 1024px;
+
+@mixin laptop {
+    @media (min-width: #{$breakpoint-laptop}) {
+        @content;
+    }
+}
+
+
+// Contenedor de las imagenes
+.imgContainer {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    // Estilos específicos para laptop
+    @include laptop {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+.imgContainer img {
+    width: 50%;
+
+    // Estilos específicos para laptop
+    @include laptop {
+        width: 20%;
+    }
+}
+
+// Contenedor del texto de bienvenida
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.welcome-text h3 {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    // Estilos específicos para laptop
+    @include laptop {
+        font-size: 52px;
+    }
+}
+
+// Boton que lleva a la vista del registro
+.welcome-text a {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: flex-end;
+    background-color: #0c66e1;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: white;
+    text-decoration: none;
+}
+.welcome-text a:hover {
+    background-color: #0a2f62; /* Cambia el color de fondo al hacer hover */
+    border: 2px solid transparent;
+    cursor: pointer;
+}
