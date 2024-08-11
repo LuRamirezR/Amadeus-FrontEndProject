@@ -1,7 +1,7 @@
 <app-header></app-header>
 <main>
   <!-- Pregunta 1 - Categoria Preferencia de destino -->
-    <div *ngIf="currentCard === 1" class="container">
+    <div *ngIf="currentCard === 1" class="container card1">
       <h2>¿Qué tipo de entorno prefieres para tus vacaciones?</h2>
       <div class="opciones">
         <label>
@@ -22,17 +22,19 @@
       </div>
     </div>
     <!-- Pregunta 2 - Categoria Preferencia de destino -->
-    <div *ngIf="currentCard === 2">
+    <div *ngIf="currentCard === 2" class="container card2">
         <h2>¿Te gustaría explorar un destino internacional o nacional?</h2>
-        <label>
-          <input type="radio" id="opcion1-card2" name="card2" value="internacional" (change)="onSelect('destino', 'internacional')"> Internacional
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card2" name="card2" value="nacional" (change)="onSelect('destino', 'nacional')"> Nacional
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card2" name="card2" value="indiferente" (change)="onSelect('destino', 'indiferente')"> Indiferente
-        </label>
+        <div class="opciones">
+          <label>
+            <input type="radio" id="opcion1-card2" name="card2" value="internacional" (change)="onSelect('destino', 'internacional')"> Internacional
+          </label>
+          <label>
+            <input type="radio" id="opcion2-card2" name="card2" value="nacional" (change)="onSelect('destino', 'nacional')"> Nacional
+          </label>
+          <label>
+            <input type="radio" id="opcion3-card2" name="card2" value="indiferente" (change)="onSelect('destino', 'indiferente')"> Indiferente
+          </label>
+        </div>
         <div class="btn__container">
           <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -44,17 +46,19 @@
         </div>
     </div>
     <!-- Pregunta 3 - Categoria Preferencia climática -->
-    <div *ngIf="currentCard === 3">
+    <div *ngIf="currentCard === 3" class="container card3">
         <h2>¿Qué clima prefieres durante tus vacaciones?</h2>
-        <label>
-          <input type="radio" id="opcion1-card3" name="card3" value="caluroso" (change)="onSelect('clima', 'caluroso')"> Caluroso
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card3" name="card3" value="templado" (change)="onSelect('clima', 'templado')"> Templado
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card3" name="card3" value="frio" (change)="onSelect('clima', 'frio')"> Frío
-        </label>
+        <div class="opciones">
+          <label>
+            <input type="radio" id="opcion1-card3" name="card3" value="caluroso" (change)="onSelect('clima', 'caluroso')"> Caluroso
+          </label>
+          <label>
+            <input type="radio" id="opcion2-card3" name="card3" value="templado" (change)="onSelect('clima', 'templado')"> Templado
+          </label>
+          <label>
+            <input type="radio" id="opcion3-card3" name="card3" value="frio" (change)="onSelect('clima', 'frio')"> Frío
+          </label>
+        </div>
         <div class="btn__container">
           <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -66,17 +70,19 @@
         </div>
     </div>
     <!-- Pregunta 4 - Categoria Preferencia climática -->
-    <div *ngIf="currentCard === 4">
+    <div *ngIf="currentCard === 4" class="container card4">
       <h2>¿Te molesta la lluvia en tus vacaciones?</h2>
-      <label>
-        <input type="radio" id="opcion1-card4" name="card4" value="seco" (change)="onSelect('molesta-lluvia', 'seco')"> Sí, prefiero clima seco
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card4" name="card4" value="poca-lluvia" (change)="onSelect('molesta-lluvia', 'poca-lluvia')"> No me importa un poco de lluvia
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card4" name="card4" value="lluvia-ocasional" (change)="onSelect('molesta-lluvia', 'lluvia-ocasional')"> Prefiero destinos con lluvias ocasionales
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card4" name="card4" value="seco" (change)="onSelect('molesta-lluvia', 'seco')"> Sí, prefiero clima seco
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card4" name="card4" value="poca-lluvia" (change)="onSelect('molesta-lluvia', 'poca-lluvia')"> No me importa un poco de lluvia
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card4" name="card4" value="lluvia-ocasional" (change)="onSelect('molesta-lluvia', 'lluvia-ocasional')"> Prefiero destinos con lluvias ocasionales
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -88,17 +94,19 @@
       </div>
     </div>
     <!-- Pregunta 5 - Categoria Preferencia de actividad -->
-    <div *ngIf="currentCard === 5">
+    <div *ngIf="currentCard === 5" class="container card5">
       <h2>¿Qué tipo de actividades prefieres hacer durante tus vacaciones?</h2>
-      <label>
-        <input type="radio" id="opcion1-card5" name="card5" value="deportes" (change)="onSelect('actividades', 'deportes')"> Deportes y aventuras
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card5" name="card5" value="cultura" (change)="onSelect('actividades', 'cultura')"> Cultura y museos
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card5" name="card5" value="relax" (change)="onSelect('actividades', 'relax')"> Relax y bienestar ocasionales
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card5" name="card5" value="deportes" (change)="onSelect('actividades', 'deportes')"> Deportes y aventuras
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card5" name="card5" value="cultura" (change)="onSelect('actividades', 'cultura')"> Cultura y museos
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card5" name="card5" value="relax" (change)="onSelect('actividades', 'relax')"> Relax y bienestar ocasionales
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -110,17 +118,19 @@
       </div>
     </div>
     <!-- Pregunta 6 - Categoria Preferencia de actividad -->
-    <div *ngIf="currentCard === 6">
+    <div *ngIf="currentCard === 6" class="container card6">
       <h2>¿Te gusta disfrutar de la gastronomía local durante tus viajes?</h2>
-      <label>
-        <input type="radio" id="opcion1-card6" name="card6" value="si-importante" (change)="onSelect('gastronomia', 'si-importante')"> Sí, es muy importante para mí
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card6" name="card6" value="cosas-nuevas" (change)="onSelect('gastronomia', 'cosas-nuevas')"> Me gusta probar cosas nuevas, pero no es lo principal
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card6" name="card6" value="no-familiar" (change)="onSelect('gastronomia', 'no-familiar')"> No, prefiero comida más familiar
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card6" name="card6" value="si-importante" (change)="onSelect('gastronomia', 'si-importante')"> Sí, es muy importante para mí
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card6" name="card6" value="cosas-nuevas" (change)="onSelect('gastronomia', 'cosas-nuevas')"> Me gusta probar cosas nuevas, pero no es lo principal
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card6" name="card6" value="no-familiar" (change)="onSelect('gastronomia', 'no-familiar')"> No, prefiero comida más familiar
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -132,17 +142,19 @@
       </div>
     </div>
     <!-- Pregunta 7 - Categoria Preferencia de alojamiento -->
-    <div *ngIf="currentCard === 7">
+    <div *ngIf="currentCard === 7" class="container card7">
       <h2>¿Qué tipo de alojamiento prefieres?</h2>
-      <label>
-        <input type="radio" id="opcion1-card7" name="card7" value="hotellujo" (change)="onSelect('alojamiento', 'hotellujo')"> Hotel de lujo
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card7" name="card7" value="hostal" (change)="onSelect('alojamiento', 'hostal')"> Hostal o albergue
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card7" name="card7" value="airbnb" (change)="onSelect('alojamiento', 'airbnb')"> Airbnb o apartamento
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card7" name="card7" value="hotellujo" (change)="onSelect('alojamiento', 'hotellujo')"> Hotel de lujo
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card7" name="card7" value="hostal" (change)="onSelect('alojamiento', 'hostal')"> Hostal o albergue
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card7" name="card7" value="airbnb" (change)="onSelect('alojamiento', 'airbnb')"> Airbnb o apartamento
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -154,17 +166,19 @@
       </div>
     </div>
     <!-- Pregunta 8 - Categoria Preferencia de alojamiento -->
-    <div *ngIf="currentCard === 8">
+    <div *ngIf="currentCard === 8" class="container card8">
       <h2>¿Te importa si el alojamiento está en el centro de la ciudad o prefieres las afueras?</h2>
-      <label>
-        <input type="radio" id="opcion1-card8" name="card8" value="centro-ciudad" (change)="onSelect('aloja-ciudad-afuera', 'centro-ciudad')"> Centro de la ciudad
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card8" name="card8" value="afueras" (change)="onSelect('aloja-ciudad-afuera', 'afueras')"> Afueras
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card8" name="card8" value="indiferente" (change)="onSelect('aloja-ciudad-afuera', 'indiferente')"> Indiferente
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card8" name="card8" value="centro-ciudad" (change)="onSelect('aloja-ciudad-afuera', 'centro-ciudad')"> Centro de la ciudad
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card8" name="card8" value="afueras" (change)="onSelect('aloja-ciudad-afuera', 'afueras')"> Afueras
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card8" name="card8" value="indiferente" (change)="onSelect('aloja-ciudad-afuera', 'indiferente')"> Indiferente
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -176,17 +190,19 @@
       </div>
     </div>
     <!-- Pregunta 9 - Categoria Duración del viaje -->
-    <div *ngIf="currentCard === 9">
+    <div *ngIf="currentCard === 9" class="container card9">
       <h2>¿Cuánto tiempo planeas quedarte de vacaciones?</h2>
-      <label>
-        <input type="radio" id="opcion1-card9" name="card9" value="menosunasemana" (change)="onSelect('duracion', 'menosunasemana')"> Menos de una semana
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card9" name="card9" value="unadossemanas" (change)="onSelect('duracion', 'unadossemanas')"> Una a dos semanas
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card9" name="card9" value="masdossemanas" (change)="onSelect('duracion', 'masdossemanas')"> Más de dos semanas
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card9" name="card9" value="menosunasemana" (change)="onSelect('duracion', 'menosunasemana')"> Menos de una semana
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card9" name="card9" value="unadossemanas" (change)="onSelect('duracion', 'unadossemanas')"> Una a dos semanas
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card9" name="card9" value="masdossemanas" (change)="onSelect('duracion', 'masdossemanas')"> Más de dos semanas
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -198,17 +214,19 @@
       </div>
     </div>
     <!-- Pregunta 10 - Categoria Duración del viaje -->
-    <div *ngIf="currentCard === 10">
+    <div *ngIf="currentCard === 10" class="container card10">
       <h2>¿Cuántos días de actividades intensas puedes disfrutar antes de necesitar un descanso?</h2>
-      <label>
-        <input type="radio" id="opcion1-card10" name="card10" value="12dias" (change)="onSelect('descanso', '12dias')"> 1-2 días
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card10" name="card10" value="35dias" (change)="onSelect('descanso', '35dias')"> 3-5 días
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card10" name="card10" value="mas5dias" (change)="onSelect('descanso', 'mas5dias')"> Más de 5 días
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card10" name="card10" value="12dias" (change)="onSelect('descanso', '12dias')"> 1-2 días
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card10" name="card10" value="35dias" (change)="onSelect('descanso', '35dias')"> 3-5 días
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card10" name="card10" value="mas5dias" (change)="onSelect('descanso', 'mas5dias')"> Más de 5 días
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -220,17 +238,19 @@
       </div>
     </div>
     <!-- Pregunta 11 - Categoria Edad -->
-    <div *ngIf="currentCard === 11">
+    <div *ngIf="currentCard === 11" class="container card11">
       <h2>¿Cuál es tu rango de edad?</h2>
-      <label>
-        <input type="radio" id="opcion1-card10" name="card10" value="menos-una-semana" (change)="onSelect('edad', 'menos30anos')"> Menos de 30 años
-      </label>
-      <label>
-        <input type="radio" id="opcion2-card10" name="card10" value="una-dos-semanas" (change)="onSelect('edad', '3050anos')"> 30-50 años
-      </label>
-      <label>
-        <input type="radio" id="opcion3-card10" name="card10" value="mas-dos-semanas" (change)="onSelect('edad', 'mas50anos')"> Más de 50 años
-      </label>
+      <div class="opciones">
+        <label>
+          <input type="radio" id="opcion1-card10" name="card10" value="menos-una-semana" (change)="onSelect('edad', 'menos30anos')"> Menos de 30 años
+        </label>
+        <label>
+          <input type="radio" id="opcion2-card10" name="card10" value="una-dos-semanas" (change)="onSelect('edad', '3050anos')"> 30-50 años
+        </label>
+        <label>
+          <input type="radio" id="opcion3-card10" name="card10" value="mas-dos-semanas" (change)="onSelect('edad', 'mas50anos')"> Más de 50 años
+        </label>
+      </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
