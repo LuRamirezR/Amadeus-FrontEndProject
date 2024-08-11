@@ -14,22 +14,67 @@ $breakpoint-tablet: 600px;
     }
 }
 
-.btn__container {
+
+// Estilos de las cards
+//  Contenedor de la pregunta
+.container {
+    min-width: 320px;
+    height: 470px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-image: url(../../assets/img/cards/1-question.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // Contenedor de las opciones (label-input)
+    .opciones {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: flex-start;
+        
+        // Estilos solo a los label (texto)
+        & label {
+            font-size: 20px; 
+            font-weight: 600;   
+            width: 160px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.22);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.9px);
+            -webkit-backdrop-filter: blur(4.9px);
+            border: 1px solid rgba(255, 255, 255, 0.48);
+        }
+    }
 }
 
-.btn__arrow {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background-color: #0c66e1;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 5px 8px;
+input {
     color: white;
 }
 
-.arrowIcon {
-    width: 25px;
+// Estilos del boton
+.btn__container {
+    display: flex;
+    align-self: flex-end;
+
+    .btn__arrow {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: #0c66e1;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        padding: 5px 8px;
+        color: white;
+    }
+    
+    .arrowIcon {
+        width: 25px;
+    }
 }
+
