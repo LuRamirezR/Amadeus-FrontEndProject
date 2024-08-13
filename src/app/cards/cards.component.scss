@@ -1,6 +1,8 @@
 //  Variables
 $breakpoint-laptop: 1024px;
 $breakpoint-tablet: 600px;
+$color-primary: #0c66e1;
+$color-hover: #0a2f62;
 
 @mixin tablet {
     @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
@@ -22,43 +24,43 @@ html {
 // Estilos de las cards
 //  Contenedor de la pregunta
 .container {
-    min-width: 320px;
-    height: 470px;
+    min-width: 20rem; //320px
+    height: 29.375rem; //470px
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 50px; //50px
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 160px;
+    background-size: 10rem; //160px
 
     & h2 {
         // Estilos específicos para tablet
         @include tablet {
-            font-size: 24px;
+            font-size: 1.5rem; //24px
         }
         // Estilos específicos para laptop
         @include laptop {
-            font-size: 30px;
+            font-size: 1.875rem; //30px
         }
     }
 
     // Estilos específicos para tablet
     @include tablet {
-        max-width: 420px;
+        max-width: 26.25rem; //420px
         margin: 0 auto;
-        background-size: 280px; // tamaño de la imagen en general
+        background-size: 17.5rem; //280px tamaño de la imagen en general
     }
     // Estilos específicos para laptop
     @include laptop {
-        max-width: 520px;
+        max-width: 32.5rem; //520px
         margin: 0 auto;
-        background-size: 350px; // tamaño de la imagen en general
+        background-size: 21.875rem; //350px tamaño de la imagen en general
     }
 
     // Contenedor de las opciones (label-input)
     .opciones {
-        height: 300px;
+        height: 18.75rem; //300px
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -74,43 +76,43 @@ html {
 
                 &:checked + label {
                     background: rgba(161, 90, 191, 0.17);
-                    border-radius: 16px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    border-radius: 1rem; //16px
+                    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1); //4px 30px
                     backdrop-filter: blur(4.9px);
                     -webkit-backdrop-filter: blur(4.9px);
-                    border: 1px solid rgba(161, 90, 191, 0.21);
+                    border: 0.0625rem solid rgba(161, 90, 191, 0.21); //1px
                 }
             }
             label {
-                font-size: 16px;
+                font-size: 1rem; //16px
                 font-weight: 400;
-                width: 200px;
-                padding: 10px;
+                width: 12.5rem; //200px
+                padding: 0.625rem; //10px
                 background: rgba(255, 255, 255, 0.21176470588235294);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 1rem; //16px
+                box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1); //4px 30px
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(2.7px);
-                border: 1px solid rgba(255, 255, 255, 0.29);
+                border: 0.0625rem solid rgba(255, 255, 255, 0.29); //1px
                 cursor: pointer;
 
                 // Estilos específicos para tablet
                 @include tablet {
-                    font-size: 18px;
+                    font-size: 1.125rem; //18px
                 }
                 // Estilos específicos para laptop
                 @include laptop {
-                    font-size: 20px;
-                    width: 300px;
+                    font-size: 1.25rem; //20px
+                    width: 18.75rem; //300px
                 }
 
                 &:hover {
                     background: rgba(161, 90, 191, 0.17);
-                    border-radius: 16px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    border-radius: 1rem; //16px
+                    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1); //4px 30px
                     backdrop-filter: blur(4.9px);
                     -webkit-backdrop-filter: blur(4.9px);
-                    border: 1px solid rgba(161, 90, 191, 0.21);
+                    border: 0.0625rem solid rgba(161, 90, 191, 0.21); //1px
                 }
             }
         }
@@ -125,11 +127,11 @@ html {
     background-image: url(../../assets/img/cards/2-question.svg);
     // Estilos específicos para tablet
     @include tablet {
-        background-size: 180px;
+        background-size: 11.25rem; //180px
     }
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 180px;
+        background-size: 11.25rem; //180px
     }
 }
 .card3 {
@@ -139,76 +141,76 @@ html {
     background-image: url(../../assets/img/cards/4-question.svg);
     // Estilos específicos para tablet
     @include tablet {
-        background-size: 220px;
+        background-size: 13.75rem; //220px
     }
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 220px;
+        background-size: 13.75rem; //220px
     }
 }
 .card5 {
     background-image: url(../../assets/img/cards/5-question.svg);
     // Estilos específicos para tablet
     @include tablet {
-        background-size: 230px;
+        background-size: 14.375rem; //230px
     }
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 250px;
+        background-size: 15.625rem; //250px
     }
 }
 .card6 {
     background-image: url(../../assets/img/cards/6-question.svg);
     // Estilos específicos para tablet
     @include tablet {
-        background-size: 260px;
+        background-size: 16.25rem; //260px
     }
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 270px;
+        background-size: 16.875rem; //270px
     }
 }
 .card7 {
     background-image: url(../../assets/img/cards/7-question.svg);
     // Estilos específicos para tablet
     @include tablet {
-        background-size: 220px;
+        background-size: 13.75rem; //220px
     }
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 230px;
+        background-size: 14.375rem; //230px
     }
 }
 .card8 {
     background-image: url(../../assets/img/cards/8-question.svg);
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 270px;
+        background-size: 16.875rem; //270px
     }
 }
 .card9 {
     background-image: url(../../assets/img/cards/9-question.svg);
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 270px;
+        background-size: 16.875rem; //270px
     }
 }
 .card10 {
     background-image: url(../../assets/img/cards/10-question.svg);
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 280px;
+        background-size: 17.5rem; //280px
     }
 }
 .card11 {
     background-image: url(../../assets/img/cards/11-question.svg);
     // Estilos específicos para tablet
     @include tablet {
-        background-size: 250px;
+        background-size: 15.625rem; //250px
     }
     // Estilos específicos para laptop
     @include laptop {
-        background-size: 260px;
+        background-size: 16.25rem; //260px
     }
 }
 
@@ -224,7 +226,7 @@ html {
         align-items: center;
         gap: 0.3125rem; //5px
         font-size: 1.125rem; //18px
-        background-color: #0c66e1;
+        background-color: $color-primary;
         border: 0.125rem solid transparent; //2px
         border-radius: 0.5rem; //8px
         padding: 0.3rem 0.5rem; //5px 8px
@@ -241,7 +243,7 @@ html {
         }
         // Cambio estilos del botón cuando se hace hover
         &:hover {
-            background-color: #0a2f62;
+            background-color: $color-hover;
             cursor: pointer;
         }
     }

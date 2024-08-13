@@ -1,6 +1,8 @@
 //  Variables
 $breakpoint-laptop: 1024px;
 $breakpoint-tablet: 600px;
+$color-primary: #0c66e1;
+$color-hover: #0a2f62;
 
 @mixin tablet {
     @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
@@ -72,7 +74,7 @@ html {
         .icon-form {
             width: 2.25rem; //36px
             height: 2.25rem; //36px
-            color: #0c66e1;
+            color: $color-primary;
 
             // Estilos específicos para tablet
             @include tablet {
@@ -168,12 +170,12 @@ html {
     }
     // Cuando está habilitado
     &:not(:disabled) {
-        background-color: #0c66e1;
+        background-color: $color-primary;
         cursor: pointer;
     }
     // Cuando se hace hover
     &:not(:disabled):hover {
-        background-color: #0a2f62;
+        background-color: $color-hover;
         cursor: pointer;
     }
 }

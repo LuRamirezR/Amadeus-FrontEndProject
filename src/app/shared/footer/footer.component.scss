@@ -9,13 +9,18 @@ $breakpoint-laptop: 1024px;
     }
 }
 
+html {
+    font-size: 16px;
+}
+
+
 .footer__icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: $gap-footer;
-    padding: 50px 0 5px;
+    padding: 3.125rem 0 0.3125rem; //50px 0 5px
 
     & p {
         color: $color-gray;

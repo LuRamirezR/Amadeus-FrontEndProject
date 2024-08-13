@@ -1,5 +1,7 @@
 //  Variables
 $breakpoint-laptop: 1024px;
+$color-primary: #0c66e1;
+$color-hover: #0a2f62;
 
 @mixin laptop {
     @media (min-width: #{$breakpoint-laptop}) {
@@ -7,12 +9,16 @@ $breakpoint-laptop: 1024px;
     }
 }
 
+html {
+    font-size: 16px;
+}
+
 
 // Contenedor de las imagenes
 .imgContainer {
     display: flex;
-    gap: 20px;
-    padding-bottom: 20px;
+    gap: 1.25rem; //20px
+    padding-bottom: 1.25rem; //20px
 
     // Estilos específicos para laptop
     @include laptop {
@@ -33,32 +39,32 @@ $breakpoint-laptop: 1024px;
 .welcome-text {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125px; //50px
 }
 .welcome-text h3 {
-    font-size: 44px;
+    font-size: 2.75px; //44px
     font-weight: 900;
     text-align: center;
     // Estilos específicos para laptop
     @include laptop {
-        font-size: 52px;
+        font-size: 3.25rem; //52px
     }
 }
 
 // Boton que lleva a la vista del registro
 .welcome-text a {
-    font-size: 24px;
+    font-size: 1.5rem; //24px
     font-weight: 600;
     align-self: flex-end;
-    background-color: #0c66e1;
-    border: 2px solid transparent;
+    background-color: $color-primary;
+    border: 0.125rem solid transparent; //2px
     border-radius: 8px;
-    padding: 5px 8px;
+    padding: 0.3125rem 0.5rem; //5px 8px
     color: white;
     text-decoration: none;
 }
 .welcome-text a:hover {
-    background-color: #0a2f62; /* Cambia el color de fondo al hacer hover */
-    border: 2px solid transparent;
+    background-color: $color-hover; /* Cambia el color de fondo al hacer hover */
+    border: 0.125rem solid transparent; //2px
     cursor: pointer;
 }

@@ -14,8 +14,13 @@ $breakpoint-tablet: 600px;
     }
 }
 
+html {
+    font-size: 16px;
+}
+
+
 .encabezado {
-    padding: 20px 0;
+    padding: 1.25rem 0; //20px 0
 }
 
 .encabezado img {
@@ -26,6 +31,6 @@ $breakpoint-tablet: 600px;
     }
     // Estilos específicos para laptop
     @include laptop {
-        width: 10%;
+        width: 15%;
     }
 }
