@@ -17,6 +17,7 @@ type RequiredOptions = {
 export class CardsComponent {
   currentCard = 1;
   selectedOptions: { [key: string]: string } = {};
+  vacationExclusiveRecommendation: string = '';
   vacationAmericaRecommendation: string = '';
   vacationEuropaRecommendation: string = '';
 
@@ -41,6 +42,7 @@ export class CardsComponent {
 
   // Método del boton Next
   onNext() {
+    // verifica que sí ha seleccionado una opcion de las respuestas
     const requiredOption = this.requiredOptions[this.currentCard];
     if (requiredOption && !this.selectedOptions[requiredOption]) {
       alert('Debe seleccionar una opción para continuar');
@@ -141,7 +143,7 @@ export class CardsComponent {
         this.vacationEuropaRecommendation = 'Madrid, España';
         break;
       default:
-        this.vacationAmericaRecommendation = 'Tus gustos son bastante exóticos, así que te sugerimos los siguientes destinos:';
+        this.vacationExclusiveRecommendation = 'Tus gustos son bastante exóticos, así que te sugerimos los siguientes destinos:';
         this.vacationAmericaRecommendation = 'Bora Bora, Polinesia Francesa';
         this.vacationEuropaRecommendation = 'Dubái, Emiratos Árabes';
         break;

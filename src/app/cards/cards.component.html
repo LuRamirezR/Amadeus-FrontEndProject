@@ -4,15 +4,18 @@
     <div *ngIf="currentCard === 1" class="container card1">
       <h2>¿Qué tipo de entorno prefieres para tus vacaciones?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" name="card1" value="playa" (change)="onSelect('entorno', 'playa')"> Playa
-        </label>
-        <label>
-          <input type="radio" name="card1" value="montana" (change)="onSelect('entorno', 'montana')"> Montaña
-        </label>
-        <label>
-          <input type="radio" name="card1" value="ciudad" (change)="onSelect('entorno', 'ciudad')"> Ciudad
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card1" name="card1" value="playa" (change)="onSelect('entorno', 'playa')">
+          <label for="opcion1-card1">Playa</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card1" name="card1" value="playa" (change)="onSelect('entorno', 'playa')">
+          <label for="opcion2-card1">Montana</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card1" name="card1" value="playa" (change)="onSelect('entorno', 'playa')">
+          <label for="opcion3-card1">Ciudad</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onNext()" class="btn__arrow">Next <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -25,15 +28,18 @@
     <div *ngIf="currentCard === 2" class="container card2">
         <h2>¿Te gustaría explorar un destino internacional o nacional?</h2>
         <div class="opciones">
-          <label>
-            <input type="radio" id="opcion1-card2" name="card2" value="internacional" (change)="onSelect('destino', 'internacional')"> Internacional
-          </label>
-          <label>
-            <input type="radio" id="opcion2-card2" name="card2" value="nacional" (change)="onSelect('destino', 'nacional')"> Nacional
-          </label>
-          <label>
-            <input type="radio" id="opcion3-card2" name="card2" value="indiferente" (change)="onSelect('destino', 'indiferente')"> Indiferente
-          </label>
+          <div class="opcion">
+            <input type="radio" id="opcion1-card2" name="card2" value="internacional" (change)="onSelect('destino', 'internacional')">
+            <label for="opcion1-card2">Internacional</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="opcion2-card2" name="card2" value="nacional" (change)="onSelect('destino', 'nacional')">
+            <label for="opcion2-card2">Nacional</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="opcion3-card2" name="card2" value="indiferente" (change)="onSelect('destino', 'indiferente')">
+            <label for="opcion3-card2">Indiferente</label>
+          </div>
         </div>
         <div class="btn__container">
           <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -49,15 +55,18 @@
     <div *ngIf="currentCard === 3" class="container card3">
         <h2>¿Qué clima prefieres durante tus vacaciones?</h2>
         <div class="opciones">
-          <label>
-            <input type="radio" id="opcion1-card3" name="card3" value="caluroso" (change)="onSelect('clima', 'caluroso')"> Caluroso
-          </label>
-          <label>
-            <input type="radio" id="opcion2-card3" name="card3" value="templado" (change)="onSelect('clima', 'templado')"> Templado
-          </label>
-          <label>
-            <input type="radio" id="opcion3-card3" name="card3" value="frio" (change)="onSelect('clima', 'frio')"> Frío
-          </label>
+          <div class="opcion">
+            <input type="radio" id="opcion1-card3" name="card3" value="caluroso" (change)="onSelect('clima', 'caluroso')">
+            <label for="opcion1-card3">Caluroso</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="opcion2-card3" name="card3" value="templado" (change)="onSelect('clima', 'templado')">
+            <label for="opcion2-card3">Templado</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="opcion3-card3" name="card3" value="frio" (change)="onSelect('clima', 'frio')">
+            <label for="opcion3-card3">Frío</label>
+          </div>
         </div>
         <div class="btn__container">
           <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -73,15 +82,18 @@
     <div *ngIf="currentCard === 4" class="container card4">
       <h2>¿Te molesta la lluvia en tus vacaciones?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card4" name="card4" value="seco" (change)="onSelect('molesta-lluvia', 'seco')"> Sí, prefiero clima seco
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card4" name="card4" value="poca-lluvia" (change)="onSelect('molesta-lluvia', 'poca-lluvia')"> No me importa un poco de lluvia
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card4" name="card4" value="lluvia-ocasional" (change)="onSelect('molesta-lluvia', 'lluvia-ocasional')"> Prefiero destinos con lluvias ocasionales
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card4" name="card4" value="seco" (change)="onSelect('molesta-lluvia', 'seco')">
+          <label for="opcion1-card4">Sí, prefiero clima seco</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card4" name="card4" value="poca-lluvia" (change)="onSelect('molesta-lluvia', 'poca-lluvia')">
+          <label for="opcion2-card4">No me importa un poco de lluvia</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card4" name="card4" value="lluvia-ocasional" (change)="onSelect('molesta-lluvia', 'lluvia-ocasional')">
+          <label for="opcion3-card4">Prefiero destinos con lluvias ocasionales</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -97,15 +109,18 @@
     <div *ngIf="currentCard === 5" class="container card5">
       <h2>¿Qué tipo de actividades prefieres hacer durante tus vacaciones?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card5" name="card5" value="deportes" (change)="onSelect('actividades', 'deportes')"> Deportes y aventuras
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card5" name="card5" value="cultura" (change)="onSelect('actividades', 'cultura')"> Cultura y museos
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card5" name="card5" value="relax" (change)="onSelect('actividades', 'relax')"> Relax y bienestar ocasionales
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card5" name="card5" value="deportes" (change)="onSelect('actividades', 'deportes')">
+          <label for="opcion1-card5">Deportes y aventuras</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card5" name="card5" value="cultura" (change)="onSelect('actividades', 'cultura')">
+          <label for="opcion2-card5">Cultura y museos</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card5" name="card5" value="relax" (change)="onSelect('actividades', 'relax')">
+          <label for="opcion3-card5">Relax y bienestar ocasionales</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -121,15 +136,18 @@
     <div *ngIf="currentCard === 6" class="container card6">
       <h2>¿Te gusta disfrutar de la gastronomía local durante tus viajes?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card6" name="card6" value="si-importante" (change)="onSelect('gastronomia', 'si-importante')"> Sí, es muy importante para mí
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card6" name="card6" value="cosas-nuevas" (change)="onSelect('gastronomia', 'cosas-nuevas')"> Me gusta probar cosas nuevas, pero no es lo principal
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card6" name="card6" value="no-familiar" (change)="onSelect('gastronomia', 'no-familiar')"> No, prefiero comida más familiar
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card6" name="card6" value="si-importante" (change)="onSelect('gastronomia', 'si-importante')">
+          <label for="opcion1-card6">Sí, es muy importante para mí</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card6" name="card6" value="cosas-nuevas" (change)="onSelect('gastronomia', 'cosas-nuevas')">
+          <label for="opcion2-card6">Me gusta probar cosas nuevas, pero no es lo principal</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card6" name="card6" value="no-familiar" (change)="onSelect('gastronomia', 'no-familiar')">
+          <label for="opcion3-card6">No, prefiero comida más familiar</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -145,15 +163,18 @@
     <div *ngIf="currentCard === 7" class="container card7">
       <h2>¿Qué tipo de alojamiento prefieres?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card7" name="card7" value="hotellujo" (change)="onSelect('alojamiento', 'hotellujo')"> Hotel de lujo
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card7" name="card7" value="hostal" (change)="onSelect('alojamiento', 'hostal')"> Hostal o albergue
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card7" name="card7" value="airbnb" (change)="onSelect('alojamiento', 'airbnb')"> Airbnb o apartamento
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card7" name="card7" value="hotellujo" (change)="onSelect('alojamiento', 'hotellujo')">
+          <label for="opcion1-card7">Hotel de lujo</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card7" name="card7" value="hostal" (change)="onSelect('alojamiento', 'hostal')">
+          <label for="opcion2-card7">Hostal o albergue</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card7" name="card7" value="airbnb" (change)="onSelect('alojamiento', 'airbnb')">
+          <label for="opcion3-card7">Airbnb o apartamento</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -169,15 +190,18 @@
     <div *ngIf="currentCard === 8" class="container card8">
       <h2>¿Te importa si el alojamiento está en el centro de la ciudad o prefieres las afueras?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card8" name="card8" value="centro-ciudad" (change)="onSelect('aloja-ciudad-afuera', 'centro-ciudad')"> Centro de la ciudad
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card8" name="card8" value="afueras" (change)="onSelect('aloja-ciudad-afuera', 'afueras')"> Afueras
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card8" name="card8" value="indiferente" (change)="onSelect('aloja-ciudad-afuera', 'indiferente')"> Indiferente
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card8" name="card8" value="centro-ciudad" (change)="onSelect('aloja-ciudad-afuera', 'centro-ciudad')">
+          <label for="opcion1-card8">Centro de la ciudad</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card8" name="card8" value="afueras" (change)="onSelect('aloja-ciudad-afuera', 'afueras')">
+          <label for="opcion2-card8">Afueras</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card8" name="card8" value="indiferente" (change)="onSelect('aloja-ciudad-afuera', 'indiferente')">
+          <label for="opcion3-card8">Indiferente</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -193,15 +217,18 @@
     <div *ngIf="currentCard === 9" class="container card9">
       <h2>¿Cuánto tiempo planeas quedarte de vacaciones?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card9" name="card9" value="menosunasemana" (change)="onSelect('duracion', 'menosunasemana')"> Menos de una semana
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card9" name="card9" value="unadossemanas" (change)="onSelect('duracion', 'unadossemanas')"> Una a dos semanas
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card9" name="card9" value="masdossemanas" (change)="onSelect('duracion', 'masdossemanas')"> Más de dos semanas
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card9" name="card9" value="menosunasemana" (change)="onSelect('duracion', 'menosunasemana')">
+          <label for="opcion1-card9">Menos de una semana</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card9" name="card9" value="unadossemanas" (change)="onSelect('duracion', 'unadossemanas')">
+          <label for="opcion2-card9">Una a dos semanas</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card9" name="card9" value="masdossemanas" (change)="onSelect('duracion', 'masdossemanas')">
+          <label for="opcion3-card9">Más de dos semanas</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -217,15 +244,18 @@
     <div *ngIf="currentCard === 10" class="container card10">
       <h2>¿Cuántos días de actividades intensas puedes disfrutar antes de necesitar un descanso?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card10" name="card10" value="12dias" (change)="onSelect('descanso', '12dias')"> 1-2 días
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card10" name="card10" value="35dias" (change)="onSelect('descanso', '35dias')"> 3-5 días
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card10" name="card10" value="mas5dias" (change)="onSelect('descanso', 'mas5dias')"> Más de 5 días
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card10" name="card10" value="12dias" (change)="onSelect('descanso', '12dias')">
+          <label for="opcion1-card10">1-2 días</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card10" name="card10" value="35dias" (change)="onSelect('descanso', '35dias')">
+          <label for="opcion2-card10">3-5 días</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card10" name="card10" value="mas5dias" (change)="onSelect('descanso', 'mas5dias')">
+          <label for="opcion3-card10">Más de 5 días</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
@@ -241,22 +271,25 @@
     <div *ngIf="currentCard === 11" class="container card11">
       <h2>¿Cuál es tu rango de edad?</h2>
       <div class="opciones">
-        <label>
-          <input type="radio" id="opcion1-card10" name="card10" value="menos-una-semana" (change)="onSelect('edad', 'menos30anos')"> Menos de 30 años
-        </label>
-        <label>
-          <input type="radio" id="opcion2-card10" name="card10" value="una-dos-semanas" (change)="onSelect('edad', '3050anos')"> 30-50 años
-        </label>
-        <label>
-          <input type="radio" id="opcion3-card10" name="card10" value="mas-dos-semanas" (change)="onSelect('edad', 'mas50anos')"> Más de 50 años
-        </label>
+        <div class="opcion">
+          <input type="radio" id="opcion1-card10" name="card10" value="menos-una-semana" (change)="onSelect('edad', 'menos30anos')">
+          <label for="opcion1-card10">Menos de 30 años</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion2-card10" name="card10" value="una-dos-semanas" (change)="onSelect('edad', '3050anos')">
+          <label for="opcion2-card10">30-50 años</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="opcion3-card10" name="card10" value="mas-dos-semanas" (change)="onSelect('edad', 'mas50anos')">
+          <label for="opcion3-card10">Más de 50 años</label>
+        </div>
       </div>
       <div class="btn__container">
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
-          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
+        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
         </svg> Previous</button>
         <button (click)="onNext()" class="btn__arrow">Next <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
-          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
         </svg>
         </button>
       </div>
@@ -264,6 +297,7 @@
     <!-- Recomendacion -->
     <div *ngIf="currentCard === 12">
       <h2>Recomendación de Vacaciones</h2>
+      <p>{{vacationExclusiveRecommendation}}</p>
       <p>Tu posible destino de viaje en América es: {{ vacationAmericaRecommendation }}</p>
       <p>Tu posible destino de viaje en Europa es: {{ vacationEuropaRecommendation }}</p>
     </div>

@@ -14,12 +14,25 @@ $breakpoint-tablet: 600px;
     }
 }
 
+html {
+    font-size: 16px;
+}
+
 .titulo-registro {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem; // 24px
     p {
         margin: 0;
-        font-size: 24px;
+        font-size: 1.5rem; // 24px
+
+        // Estilos específicos para tablet
+        @include tablet() {
+            font-size: 1.875rem; //30px
+        }
+        // Estilos específicos para laptop
+        @include laptop {
+            font-size: 1.875rem; //30px
+        }
     }
 }
 
@@ -27,77 +40,130 @@ $breakpoint-tablet: 600px;
 .contenedor-formulario {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 0.9rem; //15px
+    padding: 1.25rem; //20px
     background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem; //8px
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); //0 4px 6px
+
+    // Estilos específicos para tablet
+    @include tablet() {
+        width: 70%;
+        margin: 0 auto;
+        gap: 1.875rem; //30px separación entre (nombre-email)
+        padding: 1.85rem; //30px
+    }
+    // Estilos específicos para laptop
+    @include laptop {
+        width: 50%;
+        margin: 0 auto;
+        gap: 1.25rem; //20px separación entre (nombre-email)
+        padding: 1.25rem; //20px
+    }
 
     // Contenedor de cada campo del formulario
     .datos-formulario {
         display: flex;
-        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 20px;
-        
-        // Estilos específicos para tablet
-        @include tablet {
-            justify-content: center;
-        }
-        // Estilos específicos para laptop
-        // @include laptop {
-        //     align-items: flex-start;
-        // }
+        gap: 1.25rem; //20px, separacion entre icono y label/input
         
         // Icono del formulario
         .icon-form {
-            width: 24px;
-            height: 24px;
+            width: 2.25rem; //36px
+            height: 2.25rem; //36px
             color: #0c66e1;
+
+            // Estilos específicos para tablet
+            @include tablet {
+                width: 2.75rem; //44px
+                height: 2.75rem; //44px
+            }
+            // Estilos específicos para laptop
+            @include laptop {
+                width: 1.875rem; //30px
+                height: 1.875rem; //30px
+            }
         }
 
         // Cada campo de texto del formulario
         .texto-form {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 0.3rem; //5px
 
             label {
                 font-weight: bold;
+
+                // Estilos específicos para tablet
+                @include tablet {
+                    font-size: 1.25rem; //20px
+                }
+                // Estilos específicos para laptop
+                @include laptop {
+                    font-size: 1.25rem; //20px
+                }
             }
 
             input, select {
-                width: 100%;
+                width: 12.5rem; //200px
+
+                // Estilos específicos para tablet
+                @include tablet {
+                    width: 20rem; //320px
+                }
+                // Estilos específicos para laptop
+                @include laptop {
+                    width: 25rem; //400px
+                }
             }
         }
     }
     // Posiciona el botón dentro del formulario
     .btn-sgte {
         align-self: flex-end;  // Posiciona el botón al final y a la derecha
-        margin-top: 20px;      // Ajusta la separación superior
+        margin-top: 0.9rem; //15px
     }
 }
 
 // Estilos para los input y select
 .input-custom, .select-custom {
-    border: 1px solid #ccc;  // Borde gris claro
-    border-radius: 5px;      // Bordes redondeados
-    padding: 5px;           // Relleno interior
+    border: 0.0625rem solid #ccc; //1px
+    border-radius: 0.3rem; //5px
+    padding: 0.3rem; //5px
+
+    // Estilos específicos para tablet
+    @include tablet {
+        font-size: 1.125rem; //18px
+    }
+    // Estilos específicos para laptop
+    @include laptop {
+        font-size: 1.125rem; //18px
+    }
 }
 
 // Estilos del botón
 .btn-primary {
-    font-size: 18px;
+    font-size: 1.125rem; //18px
     font-weight: 600;
-    border-radius: 8px;
-    padding: 5px 8px;
+    border-radius: 0.5rem; //8px
+    padding: 0.3rem 0.5rem; //5px 8px
     color: white;
-    border: 2px solid transparent; 
+    border: 0.125rem solid transparent; //2px
+
+    // Estilos específicos para tablet
+    @include tablet {
+        font-size: 1.5rem; //24px
+        padding: 0.5rem 1rem; //8px 16px
+    }
+    // Estilos específicos para laptop
+    @include laptop {
+        font-size: 1.5rem; //24px
+    }
 
     // Cuando está deshabilitado
     &:disabled {
-        background-color: #8ad7ff;
+        background-color: #adb5bd;
         cursor: not-allowed;
     }
     // Cuando está habilitado
