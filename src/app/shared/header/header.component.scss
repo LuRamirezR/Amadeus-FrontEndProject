@@ -3,34 +3,45 @@ $breakpoint-laptop: 1024px;
 $breakpoint-tablet: 600px;
 
 @mixin tablet {
-    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
-        @content;
-    }
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
+    @content;
+  }
 }
 
 @mixin laptop {
-    @media (min-width: #{$breakpoint-laptop}) {
-        @content;
-    }
+  @media (min-width: #{$breakpoint-laptop}) {
+    @content;
+  }
 }
 
 html {
-    font-size: 16px;
+  font-size: 62.5%;
 }
 
-
 .encabezado {
-    padding: 1.25rem 0; //20px 0
+  padding: 2rem 0; //20px 0
+
+  // Estilos específicos tablet
+  @include tablet {
+    width: 42rem;
+    margin: 0 auto;
+  }
+
+  // Estilos específicos para laptop
+  @include laptop {
+    width: 52rem;
+    margin: 0 auto;
+  }
 }
 
 .encabezado img {
-    width: 40%;
-    // Estilos específicos para tablet
-    @include tablet {
-        width: 20%;
-    }
-    // Estilos específicos para laptop
-    @include laptop {
-        width: 15%;
-    }
+  width: 40%;
+  // Estilos específicos para tablet
+  @include tablet {
+    width: 25%;
+  }
+  // Estilos específicos para laptop
+  @include laptop {
+    width: 25%;
+  }
 }
