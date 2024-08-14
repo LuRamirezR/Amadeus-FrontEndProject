@@ -1,5 +1,9 @@
 <app-header></app-header>
 <main>
+  <!-- Barra de progreso -->
+  <div *ngIf="currentCard < 12" class="progress-container">
+    <div class="progress-bar" [style.width.%]="progress"></div>
+  </div>
   <!-- Pregunta 1 - Categoria Preferencia de destino -->
     <div *ngIf="currentCard === 1" class="container card1">
       <h2>¿Qué tipo de entorno prefieres para tus vacaciones?</h2>
@@ -10,7 +14,7 @@
         </div>
         <div class="opcion">
           <input type="radio" id="opcion2-card1" name="card1" value="montana" (change)="onSelect('entorno', 'montana')">
-          <label for="opcion2-card1">Montana</label>
+          <label for="opcion2-card1">Montaña</label>
         </div>
         <div class="opcion">
           <input type="radio" id="opcion3-card1" name="card1" value="ciudad" (change)="onSelect('entorno', 'ciudad')">
