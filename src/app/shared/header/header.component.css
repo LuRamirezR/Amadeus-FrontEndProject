@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+}
+
+.encabezado {
+  padding: 2rem 0;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .encabezado {
+    width: 42rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .encabezado {
+    width: 52rem;
+    margin: 0 auto;
+  }
+}
+
+.encabezado img {
+  width: 40%;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .encabezado img {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .encabezado img {
+    width: 25%;
+  }
+}
