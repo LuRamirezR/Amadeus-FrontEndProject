@@ -21,6 +21,11 @@ export class CardsComponent {
   vacationAmericaRecommendation: string = '';
   vacationEuropaRecommendation: string = '';
 
+  // método getter
+  get progress(): number {
+    return (this.currentCard / 11) * 100;
+  }
+
   requiredOptions: RequiredOptions = {
     1: 'entorno',
     2: 'destino',
