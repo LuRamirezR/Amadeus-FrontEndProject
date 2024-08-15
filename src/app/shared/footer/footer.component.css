@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+
+.footer__icon {
+  width: 90%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__icon p {
+  color: #666;
+}
+
+.footer__icon--social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__icon--social a {
+  color: #666;
+}
+
+.footer__icon--social a svg {
+  fill: currentColor;
+}
