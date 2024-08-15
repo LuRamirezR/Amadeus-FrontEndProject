@@ -1,5 +1,4 @@
-$gap-footer: 10px;
-$gap-social: 40px;
+// Variables
 $color-gray: #666;
 $breakpoint-laptop: 1024px;
 
@@ -21,8 +20,13 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: $gap-footer;
-  //50px 0 5px
+  gap: 1rem; //10px
+
+  // Estilos específicos laptop
+  @include laptop {
+    position: inherit;
+    margin-top: 2rem;
+  }
 
   & p {
     color: $color-gray;
@@ -32,7 +36,7 @@ html {
 .footer__icon--social {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; //20px
 
   a {
     color: $color-gray;
