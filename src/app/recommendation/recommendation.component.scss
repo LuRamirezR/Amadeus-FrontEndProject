@@ -35,6 +35,10 @@ html {
         flex-direction: row;
         gap: 1rem; //10px
     }
+
+    & p {
+      font-size: 1.8rem; //18px
+    }
 }
 
 .recommendation{
@@ -63,4 +67,38 @@ html {
         width: 20rem; //200px
         height: 50rem; //500px
     }
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .btn-amadeus {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; //5px
+    font-size: 1.8rem; //18px
+    background-color: $color-primary;
+    border: 0.2rem solid transparent; //2px
+    border-radius: 0.8rem; //8px
+    padding: 0.5rem 0.8rem; //5px 8px
+    color: white;
+
+    // Estilos específicos para tablet
+    @include tablet {
+      font-size: 2rem; //20px
+      padding: 0.8rem 1.6rem; //8px 16px
+    }
+    // Estilos específicos para laptop
+    @include laptop {
+      font-size: 2.4rem; //24px
+    }
+    // Cambio estilos del botón cuando se hace hover
+    &:hover {
+      background-color: $color-hover;
+      cursor: pointer;
+    }
+  }
 }

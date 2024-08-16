@@ -33,6 +33,176 @@ const recommendations: { [key: string]: Recommendation } = {
       city: 'Barcelona, España',
       image: 'assets/img/cards/4-question.svg'
     }
+  },
+  'playa-templado-cultura-hotellujo-unadossemanas-3050anos': {
+    america: {
+      city: 'Rio de Janeiro, Brasil',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Lisboa, Portugal',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'montana-frio-deportes-hostal-unadossemanas-menos30anos': {
+    america: {
+      city: 'Bariloche, Argentina',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Interlaken, Suiza',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'montana-templado-cultura-airbnb-unadossemanas-mas50anos': {
+    america: {
+      city: 'Cusco, Perú',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Granada, España',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'montana-frio-deportes-hotellujo-unadossemanas-3050anos': {
+    america: {
+      city: 'Banff, Canadá',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Zermatt, Suiza',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'ciudad-templado-cultura-hotellujo-unadossemanas-mas50anos': {
+    america: {
+      city: 'Nueva York, EE.UU.',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'París, Francia',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'ciudad-templado-relax-airbnb-menosunasemana-menos30anos': {
+    america: {
+      city: 'Miami, EE.UU.',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Viena, Austria',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'ciudad-frio-cultura-hotellujo-unadossemanas-3050anos': {
+    america: {
+      city: 'Toronto, Canadá',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Berlín, Alemania',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'playa-caluroso-deportes-hostal-unadossemanas-menos30anos': {
+    america: {
+      city: 'Tulum, México',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Ibiza, España',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'montana-frio-cultura-airbnb-unadossemanas-mas50anos': {
+    america: {
+      city: 'Ushuaia, Argentina',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Reykjavik, Islandia',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'playa-templado-relax-airbnb-masdossemanas-mas50anos': {
+    america: {
+      city: 'Punta Cana, República Dominicana',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Algarve, Portugal',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'ciudad-templado-deportes-hotellujo-menosunasemana-3050anos': {
+    america: {
+      city: 'Chicago, EE.UU.',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Londres, Reino Unido',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'playa-templado-cultura-hostal-unadossemanas-menos30anos': {
+    america: {
+      city: 'San Juan, Puerto Rico',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Niza, Francia',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'montana-templado-deportes-airbnb-masdossemanas-menos30anos': {
+    america: {
+      city: 'Machu Picchu, Perú',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Chamonix, Francia',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'ciudad-caluroso-cultura-hotellujo-unadossemanas-mas50anos': {
+    america: {
+      city: 'Los Ángeles, EE.UU.',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Roma, Italia',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'playa-caluroso-cultura-hotellujo-unadossemanas-3050anos': {
+    america: {
+      city: 'Honolulu, Hawái',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Malta',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'montana-frio-relax-airbnb-unadossemanas-mas50anos': {
+    america: {
+      city: 'Aspen, EE.UU.',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Innsbruck, Austria',
+      image: 'assets/img/cards/4-question.svg'
+    }
+  },
+  'ciudad-templado-cultura-hostal-unadossemanas-3050anos': {
+    america: {
+      city: 'Ciudad de México, México',
+      image: 'assets/img/cards/3-question.svg'
+    },
+    europe: {
+      city: 'Madrid, España',
+      image: 'assets/img/cards/4-question.svg'
+    }
   }
 };
 
