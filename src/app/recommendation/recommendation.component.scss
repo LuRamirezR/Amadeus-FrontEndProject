@@ -1,0 +1,66 @@
+//  Variables
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 600px;
+$color-primary: #0c66e1;
+$color-hover: #0a2f62;
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-laptop - 1}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$breakpoint-laptop}) {
+    @content;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.recommendations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; //30px
+
+    // Estilos específicos tablet
+    @include tablet {
+        flex-direction: row;
+        gap: 1rem; //10px
+    }
+    // Estilos específicos laptop
+    @include laptop {
+        flex-direction: row;
+        gap: 1rem; //10px
+    }
+}
+
+.recommendation{
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        font-size: 1.8rem; //18px
+    }
+}
+
+.image-container {
+    width: 30rem; //400px
+    height: 25rem; //250px
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // Estilos específicos tablet
+    @include tablet {
+        width: 20rem; //200px
+        height: 50rem; //500px
+    }
+    // Estilos específicos laptop
+    @include laptop {
+        width: 20rem; //200px
+        height: 50rem; //500px
+    }
+}
