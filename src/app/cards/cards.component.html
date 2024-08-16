@@ -223,15 +223,15 @@
       <div class="opciones">
         <div class="opcion">
           <input type="radio" id="opcion1-card9" name="card9" value="menosunasemana" (change)="onSelect('duracion', 'menosunasemana')">
-          <label for="opcion1-card9">Menos de una semana</label>
+          <label for="opcion1-card9">Menos de 1 semana</label>
         </div>
         <div class="opcion">
           <input type="radio" id="opcion2-card9" name="card9" value="unadossemanas" (change)="onSelect('duracion', 'unadossemanas')">
-          <label for="opcion2-card9">Una a dos semanas</label>
+          <label for="opcion2-card9">1 a 2 semanas</label>
         </div>
         <div class="opcion">
           <input type="radio" id="opcion3-card9" name="card9" value="masdossemanas" (change)="onSelect('duracion', 'masdossemanas')">
-          <label for="opcion3-card9">Más de dos semanas</label>
+          <label for="opcion3-card9">Más de 2 semanas</label>
         </div>
       </div>
       <div class="btn__container">
@@ -292,7 +292,7 @@
         <button (click)="onPrevious()" class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
         </svg> Previous</button>
-        <button (click)="onNext()" class="btn__arrow">Next <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
+        <button (click)="onNext()" class="btn__arrow">Finish <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="arrowIcon">
         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
         </svg>
         </button>
@@ -300,10 +300,7 @@
     </div>
     <!-- Recomendacion -->
     <div *ngIf="currentCard === 12">
-      <h2>Recomendación de Vacaciones</h2>
-      <p>{{vacationExclusiveRecommendation}}</p>
-      <p>Tu posible destino de viaje en América es: {{ vacationAmericaRecommendation }}</p>
-      <p>Tu posible destino de viaje en Europa es: {{ vacationEuropaRecommendation }}</p>
+      <app-recommendation [selectedOptions]="selectedOptions"></app-recommendation>
     </div>
   </main>
   <app-footer></app-footer>
