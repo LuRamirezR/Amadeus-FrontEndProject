@@ -59,6 +59,12 @@
           <input type="tel" id="userTelInput" formControlName="userTelInput" placeholder="Ingresa tu teléfono" class="input-custom">        
         </div>
       </div>
+      <!-- Terminos y condiciones -->
+      <div class="termsdata">
+        <input type="checkbox" name="data-accepted" checked>
+        <label for="data-accepted"> Acepto los <a href="https://amadeus.com/es/politicas/privacy-policy" target="_blank">términos y condiciones</a> de la política de protección de datos.</label>
+      </div>
+      <!-- Boton -->
       <div class="btn-sgte">
         <div class="texto-form">
           <button type="submit" (click)="guardarInformacion()" [disabled]="miFormulario.invalid" class="btn-primary">Empieza ahora</button>

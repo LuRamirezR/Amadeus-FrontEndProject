@@ -161,6 +161,16 @@ html {
     }
 }
 
+// Terminos y condiciones
+.termsdata {
+    display: flex;
+    gap: 0.5rem;
+
+    & a {
+        color: $color-primary;
+    }
+}
+
 // Estilos del botón
 .btn-primary {
     font-size: 1.8rem; //18px
