@@ -120,17 +120,17 @@ h1 {
     background-color: $color-primary;
     border: 0.2rem solid transparent; //2px
     border-radius: 0.8rem; //8px
-    padding: 0.5rem 0.8rem; //5px 8px
+    padding: 0.2rem 0.3rem; //2px 3px
     color: white;
 
     // Estilos específicos para tablet
     @include tablet {
-      font-size: 2rem; //20px
+      font-size: 1.8rem; //18px
       padding: 0.8rem 1.6rem; //8px 16px
     }
     // Estilos específicos para laptop
     @include laptop {
-      font-size: 2.4rem; //24px
+      font-size: 2rem; //2px
     }
     // Cambio estilos del botón cuando se hace hover
     &:hover {

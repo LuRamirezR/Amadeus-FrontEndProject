@@ -20,6 +20,22 @@ html {
   font-size: 62.5%;
 }
 
+// Titulo principal - nombre proyecto
+h1 {
+  text-align: center;
+  font-size: 3rem; //30px
+  margin-bottom: 1rem; //10px
+
+  // Estilos específicos para tablet
+  @include tablet {
+    font-size: 3.6rem; //36px
+  }
+  // Estilos específicos para laptop
+  @include laptop {
+    font-size: 3.6rem; //44px
+  }
+}
+
 // Contenedor de las imagenes
 .imgContainer {
   display: flex;
@@ -34,22 +50,17 @@ html {
 }
 .imgContainer img {
   width: 32rem; //320px
-  margin-top: 2rem;
-  mask-image: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255) 80%,
-    transparent 90%
-  ); //degradado
+  mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, transparent 90%); //degradado
 
   // Estilos específicos para tablet
   @include tablet {
-    margin-top: 1rem;
+    margin-top: 1rem; //10px
     width: 45rem; //450px
   }
 
   // Estilos específicos para laptop
   @include laptop {
-    width: 50rem;
+    width: 50rem; //500px
   }
 }
 
@@ -57,10 +68,10 @@ html {
 .welcome-text {
   display: flex;
   flex-direction: column;
-  gap: 2rem; //20px
+  gap: 1.5rem; //15px
 }
 .welcome-text h3 {
-  font-size: 3rem; //30px
+  font-size: 2.4rem; //24px
   font-weight: 900;
   text-align: center;
 
@@ -70,7 +81,7 @@ html {
   }
   // Estilos específicos para laptop
   @include laptop {
-    font-size: 3.6rem; //44px
+    font-size: 3.6rem; //36px
   }
 }
 
