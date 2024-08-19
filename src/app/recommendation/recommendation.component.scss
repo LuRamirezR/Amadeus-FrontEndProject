@@ -20,10 +20,41 @@ html {
   font-size: 62.5%;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2rem; //20px
+  margin-bottom: 1rem;
+
+  // Estilos específicos tablet
+  @include tablet {
+    font-size: 2.4rem; //24px
+  }
+  // Estilos específicos laptop
+  @include laptop {
+    font-size: 2.4rem; //24px
+  }
+}
+
+.out-default {
+  text-align: center;
+  font-size: 1.6rem; //16px
+  margin-bottom: 0.5rem;
+
+  // Estilos específicos tablet
+  @include tablet {
+    font-size: 1.8rem; //18px
+  }
+  // Estilos específicos laptop
+  @include laptop {
+    font-size: 1.8rem; //18px
+  }
+}
+
 .recommendations-container {
     display: flex;
     flex-direction: column;
-    gap: 3rem; //30px
+    gap: 2rem; //20px
+    margin-bottom: 0.5rem;
 
     // Estilos específicos tablet
     @include tablet {
@@ -35,24 +66,30 @@ html {
         flex-direction: row;
         gap: 1rem; //10px
     }
-
-    & p {
-      font-size: 1.8rem; //18px
-    }
 }
 
 .recommendation{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     & p {
+      font-size: 1.6rem; //16px
+
+      // Estilos específicos tablet
+      @include tablet {
         font-size: 1.8rem; //18px
+      }
+      // Estilos específicos laptop
+      @include laptop {
+        font-size: 1.8rem; //18px
+      }
     }
 }
 
 .image-container {
-    width: 30rem; //400px
-    height: 25rem; //250px
+    width: 20rem; //200px
+    height: 15rem; //150px
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +102,7 @@ html {
     // Estilos específicos laptop
     @include laptop {
         width: 20rem; //200px
-        height: 50rem; //500px
+        height: 30rem; //300px
     }
 }
 
@@ -79,7 +116,7 @@ html {
     display: flex;
     align-items: center;
     gap: 0.5rem; //5px
-    font-size: 1.8rem; //18px
+    font-size: 1.6rem; //16px
     background-color: $color-primary;
     border: 0.2rem solid transparent; //2px
     border-radius: 0.8rem; //8px
