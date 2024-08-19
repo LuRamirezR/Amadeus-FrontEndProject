@@ -1,5 +1,6 @@
+<h1>Recomendación para tu próximo viaje</h1>
+<p class="out-default" *ngIf="recommendation?.exclusive">{{ recommendation?.exclusive }}</p>
 <div class="recommendations-container">
-    <p *ngIf="recommendation?.exclusive">{{ recommendation?.exclusive }}</p>
     <div class="recommendation">
         <p>Tu posible destino de viaje en América es: {{ recommendation?.america?.city }}</p>
         <div *ngIf="recommendation?.america" class="image-container" [style.backgroundImage]="'url('+recommendation?.america?.image+')'"></div>
