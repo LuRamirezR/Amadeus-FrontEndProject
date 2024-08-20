@@ -16,192 +16,192 @@ export interface Recommendation {
 const recommendations: { [key: string]: Recommendation } = {
   'playa-caluroso-relax-hotellujo-unadossemanas-menos30anos': {
     america: {
-      city: 'Playa del Carmen, México',
-      image: 'assets/img/cards/1-question.svg'
+      city: 'México',
+      image: 'assets/img/recomendations/playa-del-carmen.png'
     },
     europe: {
-      city: 'Santorini, Grecia',
-      image: 'assets/img/cards/2-question.svg'
+      city: 'Grecia',
+      image: 'assets/img/recomendations/santorini.png'
     }
   },
   'playa-caluroso-cultura-airbnb-menosunasemana-menos30anos': {
     america: {
-      city: 'Cartagena, Colombia',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Colombia',
+      image: 'assets/img/recomendations/cartagena.png'
     },
     europe: {
-      city: 'Barcelona, España',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'España',
+      image: 'assets/img/recomendations/barcelona.png'
     }
   },
   'playa-templado-cultura-hotellujo-unadossemanas-3050anos': {
     america: {
-      city: 'Rio de Janeiro, Brasil',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Brasil',
+      image: 'assets/img/recomendations/rio-de-janeiro.png'
     },
     europe: {
-      city: 'Lisboa, Portugal',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Portugal',
+      image: 'assets/img/recomendations/lisboa.png'
     }
   },
   'montana-frio-deportes-hostal-unadossemanas-menos30anos': {
     america: {
-      city: 'Bariloche, Argentina',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Argentina',
+      image: 'assets/img/recomendations/bariloche.png'
     },
     europe: {
-      city: 'Interlaken, Suiza',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Suiza',
+      image: 'assets/img/recomendations/interlaken.png'
     }
   },
   'montana-templado-cultura-airbnb-unadossemanas-mas50anos': {
     america: {
-      city: 'Cusco, Perú',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Perú',
+      image: 'assets/img/recomendations/cusco.png'
     },
     europe: {
-      city: 'Granada, España',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'España',
+      image: 'assets/img/recomendations/granada.png'
     }
   },
   'montana-frio-deportes-hotellujo-unadossemanas-3050anos': {
     america: {
-      city: 'Banff, Canadá',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Canadá',
+      image: 'assets/img/recomendations/banff.png'
     },
     europe: {
-      city: 'Zermatt, Suiza',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Suiza',
+      image: 'assets/img/recomendations/zermatt.png'
     }
   },
   'ciudad-templado-cultura-hotellujo-unadossemanas-mas50anos': {
     america: {
-      city: 'Nueva York, EE.UU.',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'EE.UU.',
+      image: 'assets/img/recomendations/nueva-york.png'
     },
     europe: {
-      city: 'París, Francia',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Francia',
+      image: 'assets/img/recomendations/paris.png'
     }
   },
   'ciudad-templado-relax-airbnb-menosunasemana-menos30anos': {
     america: {
-      city: 'Miami, EE.UU.',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'EE.UU.',
+      image: 'assets/img/recomendations/miami.png'
     },
     europe: {
-      city: 'Viena, Austria',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Austria',
+      image: 'assets/img/recomendations/viena.png'
     }
   },
   'ciudad-frio-cultura-hotellujo-unadossemanas-3050anos': {
     america: {
-      city: 'Toronto, Canadá',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Canadá',
+      image: 'assets/img/recomendations/toronto.png'
     },
     europe: {
-      city: 'Berlín, Alemania',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Alemania',
+      image: 'assets/img/recomendations/berlin.png'
     }
   },
   'playa-caluroso-deportes-hostal-unadossemanas-menos30anos': {
     america: {
-      city: 'Tulum, México',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'México',
+      image: 'assets/img/recomendations/tulum.png'
     },
     europe: {
-      city: 'Ibiza, España',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'España',
+      image: 'assets/img/recomendations/ibiza.png'
     }
   },
   'montana-frio-cultura-airbnb-unadossemanas-mas50anos': {
     america: {
-      city: 'Ushuaia, Argentina',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Argentina',
+      image: 'assets/img/recomendations/ushuaia.png'
     },
     europe: {
-      city: 'Reykjavik, Islandia',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Islandia',
+      image: 'assets/img/recomendations/reykjavik.png'
     }
   },
   'playa-templado-relax-airbnb-masdossemanas-mas50anos': {
     america: {
-      city: 'Punta Cana, República Dominicana',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'República Dominicana',
+      image: 'assets/img/recomendations/punta-cana.png'
     },
     europe: {
-      city: 'Algarve, Portugal',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Portugal',
+      image: 'assets/img/recomendations/algarve.png'
     }
   },
   'ciudad-templado-deportes-hotellujo-menosunasemana-3050anos': {
     america: {
-      city: 'Chicago, EE.UU.',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'EE.UU.',
+      image: 'assets/img/recomendations/chicago.png'
     },
     europe: {
-      city: 'Londres, Reino Unido',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Reino Unido',
+      image: 'assets/img/recomendations/londres.png'
     }
   },
   'playa-templado-cultura-hostal-unadossemanas-menos30anos': {
     america: {
-      city: 'San Juan, Puerto Rico',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Puerto Rico',
+      image: 'assets/img/recomendations/san-juan.png'
     },
     europe: {
-      city: 'Niza, Francia',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Francia',
+      image: 'assets/img/recomendations/niza.png'
     }
   },
   'montana-templado-deportes-airbnb-masdossemanas-menos30anos': {
     america: {
-      city: 'Machu Picchu, Perú',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Perú',
+      image: 'assets/img/recomendations/machu-picchu.png'
     },
     europe: {
-      city: 'Chamonix, Francia',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Francia',
+      image: 'assets/img/recomendations/chamonix.png'
     }
   },
   'ciudad-caluroso-cultura-hotellujo-unadossemanas-mas50anos': {
     america: {
-      city: 'Los Ángeles, EE.UU.',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'EE.UU.',
+      image: 'assets/img/recomendations/los-angeles.png'
     },
     europe: {
-      city: 'Roma, Italia',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Italia',
+      image: 'assets/img/recomendations/roma.png'
     }
   },
   'playa-caluroso-cultura-hotellujo-unadossemanas-3050anos': {
     america: {
-      city: 'Honolulu, Hawái',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'Hawái',
+      image: 'assets/img/recomendations/honolulu.png'
     },
     europe: {
       city: 'Malta',
-      image: 'assets/img/cards/4-question.svg'
+      image: 'assets/img/recomendations/malta.png'
     }
   },
   'montana-frio-relax-airbnb-unadossemanas-mas50anos': {
     america: {
-      city: 'Aspen, EE.UU.',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'EE.UU.',
+      image: 'assets/img/recomendations/aspen.png'
     },
     europe: {
-      city: 'Innsbruck, Austria',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'Austria',
+      image: 'assets/img/recomendations/innsbruck.png'
     }
   },
   'ciudad-templado-cultura-hostal-unadossemanas-3050anos': {
     america: {
-      city: 'Ciudad de México, México',
-      image: 'assets/img/cards/3-question.svg'
+      city: 'México',
+      image: 'assets/img/recomendations/ciudad-de-mexico.png'
     },
     europe: {
-      city: 'Madrid, España',
-      image: 'assets/img/cards/4-question.svg'
+      city: 'España',
+      image: 'assets/img/recomendations/madrid.png'
     }
   }
 };
@@ -226,11 +226,11 @@ export class RecommendationService {
       exclusive: 'Tus gustos son bastante exóticos, así que te sugerimos los siguientes destinos:',
       america: {
         city: 'Bora Bora, Polinesia Francesa',
-        image: 'assets/img/cards/5-question.svg'
+        image: 'assets/img/recomendations/bora-bora.png'
       },
       europe: {
         city: 'Dubái, Emiratos Árabes',
-        image: 'assets/img/cards/6-question.svg'
+        image: 'assets/img/recomendations/dubai.png'
       }
     };
   }
