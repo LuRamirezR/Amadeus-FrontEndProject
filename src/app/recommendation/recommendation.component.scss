@@ -20,33 +20,39 @@ html {
   font-size: 62.5%;
 }
 
+// Titutlo principal
 h1 {
   text-align: center;
   font-size: 2rem; //20px
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; //10px
 
   // Estilos específicos tablet
   @include tablet {
     font-size: 2.4rem; //24px
+    margin-bottom: 1.5rem; //15px
   }
   // Estilos específicos laptop
   @include laptop {
     font-size: 2.4rem; //24px
+    margin-bottom: 1.5rem; //15px
   }
 }
 
+// Texto recomendación por defecto
 .out-default {
   text-align: center;
   font-size: 1.6rem; //16px
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; //5px
 
   // Estilos específicos tablet
   @include tablet {
     font-size: 1.8rem; //18px
+    margin-bottom: 1rem; //10px
   }
   // Estilos específicos laptop
   @include laptop {
     font-size: 1.8rem; //18px
+    margin-bottom: 1rem; //10px
   }
 }
 
